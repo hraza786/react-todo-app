@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
   color: navy;
@@ -22,6 +24,7 @@
 
 .Striked {
   text-decoration: line-through;
+  text-decoration-color: #F50057;
 }
 
 .check{
@@ -30,9 +33,62 @@
 
 #button{
   float:right;
-  padding: 7px;
+  padding: 3px;
+  color: #F50057;
+  border-radius: 5px;
+  background-color: white;
 }
 
 #submit{
   margin-left: 20px;
+}
+
+.linear-wipe {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 3rem;
+	font-weight:  600;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	background-clip: text;
+	color: transparent;
+	animation: hue 10s infinite linear;
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+.submitted {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  font-size: large;
+  padding: 3px;
+}
+
+.fadeOut{
+  opacity: 10;
+  transition: visibility 0s 2s, opacity 2s linear;
+
+}
+
+.deleted{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: white;
+  background-color: orangered;
+  border-radius: 5px;
+  font-size: large;
+  padding: 3px;
 }
